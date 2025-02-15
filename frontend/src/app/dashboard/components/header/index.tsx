@@ -20,7 +20,7 @@ export function Header() {
       <div className={styles.headerContent}>
         <Link href="/dashboard">
           <Image
-            src="/assets/images/logo.svg"
+            src="/assets/images/logo_xbizit_menor.png"
             alt="Logo Sujeito Pizza"
             width={190}
             height={60}

@@ -32,12 +32,13 @@ export default function SignUp() {
     <>
       <div className={styles.containerCenter}>
         <Image
-          src="/assets/images/logo.svg"
+          src="/assets/images/logo_xbizit_menor.png"
           width={190}
           height={60}
           priority={true}
           quality={100}
-          alt="Logo da pizzaria"
+          alt="Logo XBizIT"
+          className={styles.logoXBizIT}
         />
 
         <section className={styles.login}>

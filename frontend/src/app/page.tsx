@@ -1,5 +1,4 @@
 import styles from "./page.module.scss";
-import logoImg from "../../public/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { api } from "@/services/api";
@@ -46,7 +45,15 @@ export default function Home() {
   return (
     <>
       <div className={styles.containerCenter}>
-        <Image src={logoImg} alt="Logo da pizzaria" />
+        <Image
+          src="/assets/images/logo_xbizit_menor.png"
+          width={190}
+          height={60}
+          priority={true}
+          quality={100}
+          alt="Logo XBizIT"
+          className={styles.logoXBizIT}
+        />
 
         <section className={styles.login}>
           <form action={handlerLogin}>
