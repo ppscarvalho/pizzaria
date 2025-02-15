@@ -51,9 +51,15 @@ router.get('/categories', isAuthenticated, new ListCategoryController().handle)
 router.put('/categories/:id', isAuthenticated, new UpdateCategoryController().handle)
 
 //-- ROTAS PRODUTO --
-router.post('/products', isAuthenticated, upload.single('file'), new CreateProductController().handle)
-router.get('/products', isAuthenticated, new ListProductController().handle)
+//router.post('/products', isAuthenticated, upload.single('file'), new CreateProductController().handle)
+router.post('/products', isAuthenticated, new CreateProductController().handle)
+
 router.put('/products/:id', isAuthenticated, upload.single('file'), new UpdateProductController().handle)
+router.get('/products', isAuthenticated, new ListProductController().handle)
+
+
+
+
 router.get('/products/:id', isAuthenticated, new FindByIdProductController().handle)
 router.get('/categories/:categoryId/products', isAuthenticated, new ListByCategoryProductController().handle)
 
